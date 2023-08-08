@@ -1,0 +1,178 @@
+.user {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.listName{
+  margin-left: 20px;
+}
+
+.user .accordion {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #ffffff;
+}
+
+.user .accordion.open {
+  background-color: #e3e3e3;
+}
+
+.user .left {
+  flex: 1;
+  padding: 10px;
+}
+
+.user .left img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user .mid {
+  flex: 3;
+  padding: 10px;
+}
+
+.user .right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.user .right .icon {
+  font-size: 18px;
+}
+
+.user .details {
+  background-color: #f9f9f9;
+  padding: 10px;
+  display: block;
+}
+
+.fontawesomesvg svg{
+  height : 30px;
+  width:30px;
+  fill: red;
+}
+.child{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .child {
+    display: block; 
+  }
+}
+ #dob, #country, #description{
+  margin-top: 5px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 50%;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+#gender{
+  margin-top: 5px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 75%;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+
+}
+#description{
+  height: 100px;
+  position: relative;
+  width: -webkit-fill-available;
+}
+.save-cancel, .edit-delete{
+  float: right;
+  margin-top: 10px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+}
+
+.modal-header h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.modal-body p {
+  margin-bottom: 20px;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn-confirm,
+.btn-cancel {
+  padding: 8px 16px;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.btn-confirm {
+  background-color: #f56565;
+  color: #fff;
+}
+
+.btn-cancel {
+  background-color: #718096;
+  color: #fff;
+}
+#searchbar{
+  height: 30px;
+  width: -webkit-fill-available;
+  margin-bottom: 20px;
+}
+
+#content{
+  margin: 0px 20px
+}

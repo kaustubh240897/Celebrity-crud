@@ -24,7 +24,6 @@ const UserList = () => {
     const handleSearch = (e) => {
         console.log("kdsfkslfkl")
         let query = e.target.value;
-        console.log(query)
         setSearchQuery(query);
         const filtered = data.filter(
             (user) =>
@@ -35,7 +34,6 @@ const UserList = () => {
         );
         setFilteredUsers(filtered);
         setUsers(filtered)
-        console.log(filteredUsers)
     };
 
     const calculateAge = (dob) => {
